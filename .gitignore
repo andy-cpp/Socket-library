@@ -13,9 +13,12 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+<<<<<<< HEAD
 # Mono auto generated files
 mono_crash.*
 
+=======
+>>>>>>> Add .gitignore and .gitattributes.
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -29,7 +32,10 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+<<<<<<< HEAD
 [Ll]ogs/
+=======
+>>>>>>> Add .gitignore and .gitattributes.
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -43,10 +49,16 @@ Generated\ Files/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
+<<<<<<< HEAD
 # NUnit
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+=======
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+>>>>>>> Add .gitignore and .gitattributes.
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
@@ -127,6 +139,12 @@ _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
 
+<<<<<<< HEAD
+=======
+# JustCode is a .NET coding add-in
+.JustCode
+
+>>>>>>> Add .gitignore and .gitattributes.
 # TeamCity is a build add-in
 _TeamCity*
 
@@ -184,8 +202,11 @@ PublishScripts/
 
 # NuGet Packages
 *.nupkg
+<<<<<<< HEAD
 # NuGet Symbol Packages
 *.snupkg
+=======
+>>>>>>> Add .gitignore and .gitattributes.
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
@@ -210,8 +231,11 @@ BundleArtifacts/
 Package.StoreAssociation.xml
 _pkginfo.txt
 *.appx
+<<<<<<< HEAD
 *.appxbundle
 *.appxupload
+=======
+>>>>>>> Add .gitignore and .gitattributes.
 
 # Visual Studio cache files
 # files ending in .cache can be ignored
@@ -261,9 +285,13 @@ ServiceFabricBackup/
 *.bim.layout
 *.bim_*.settings
 *.rptproj.rsuser
+<<<<<<< HEAD
 *- [Bb]ackup.rdl
 *- [Bb]ackup ([0-9]).rdl
 *- [Bb]ackup ([0-9][0-9]).rdl
+=======
+*- Backup*.rdl
+>>>>>>> Add .gitignore and .gitattributes.
 
 # Microsoft Fakes
 FakesAssemblies/
@@ -299,6 +327,13 @@ paket-files/
 # FAKE - F# Make
 .fake/
 
+<<<<<<< HEAD
+=======
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+>>>>>>> Add .gitignore and .gitattributes.
 # CodeRush personal settings
 .cr/personal
 
@@ -341,6 +376,7 @@ ASALocalRun/
 .localhistory/
 
 # BeatPulse healthcheck temp database
+<<<<<<< HEAD
 healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
@@ -348,3 +384,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+=======
+healthchecksdb
+>>>>>>> Add .gitignore and .gitattributes.
