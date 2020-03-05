@@ -26,6 +26,16 @@ public:
 	ConnectionDetails(uint64_t addr[2], unsigned short uPort, type const& Type = type::IPV6);
 
 	ConnectionDetails(std::string const& ip, unsigned short uPort, type const& Type = type::IPV4);
+
+	bool operator!()
+	{
+		return (m_port == 0 || m_ip.empty());
+	}
+
+	operator bool()
+	{
+		return (m_port != 0 && !m_ip.empty());
+	}
 public:
 	std::string m_ip;
 	unsigned short m_port;

@@ -39,13 +39,22 @@ public:
 	bool listen();
 
 	/* accept function */
-	Socket accept(int iTimeout = 0);
+	Socket accept(long timeoutmsec = 0);
 
 	/* send function */
-	int send(std::string const& str, unsigned int size = -1);
+	int send(std::string const& str, int size = -1);
 
 	/* recv function */
 	int recv(std::string& buffer);
+
+	/* sendto function */
+	int sendto(ConnectionDetails const& details, std::string const& data, int size = -1);
+
+	/* recvfrom function */
+	int recvfrom(std::string& buffer, ConnectionDetails& details);
+	
+	/* hasdata function, returns true if data is to be read. */
+	bool has_data(long timeoutmsec = 0) const;
 
 	/* setsockopt, returns true on success */
 	template <typename T>
@@ -72,6 +81,8 @@ public:
 
 	/* boolean operator */
 	operator bool() const;
+
+
 public:
 	int m_socket = SOCKET_ERROR;
 	ConnectionDetails m_details;
